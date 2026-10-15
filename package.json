@@ -1,0 +1,11 @@
+{
+  "name": "nexora-windows-v20-apex-studio",
+  "version": "20.0.0",
+  "description": "NEXORA-WINDOWS v20.0 APEX Local Web Dashboard, 16-Layer Complete Device Guide (.MD) Generator, and 100/100 AI Engineering Prompt Suite",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "license": "MIT"
+}

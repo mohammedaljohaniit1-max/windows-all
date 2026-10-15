@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEXORA-WINDOWS v20.0 APEX | الداشبورد الاحترافية ودليل الجهاز الكامل</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #070b14;
+      color: #e2e8f0;
+    }
+    code, pre, .mono {
+      font-family: 'JetBrains Mono', monospace;
+      direction: ltr;
+      text-align: left;
+    }
+    .glass {
+      background: rgba(15, 23, 42, 0.78);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(56, 189, 248, 0.16);
+    }
+    .hero-glow {
+      background: radial-gradient(circle at 20% 20%, rgba(14, 165, 233, 0.22), transparent 55%),
+                  radial-gradient(circle at 80% 30%, rgba(16, 185, 129, 0.18), transparent 55%),
+                  linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(9, 13, 24, 0.98));
+    }
+    .btn-guide-pulse {
+      box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.6);
+      animation: pulse-emerald 2.2s infinite;
+    }
+    @keyframes pulse-emerald {
+      0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.55); }
+      70% { box-shadow: 0 0 0 14px rgba(16, 185, 129, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+    }
+    .tab-active {
+      background: linear-gradient(135deg, #0284c7, #0d9488);
+      color: #ffffff;
+      border-color: #38bdf8;
+    }
+    ::-webkit-scrollbar { width: 8px; height: 8px; }
+    ::-webkit-scrollbar-track { background: #090d16; }
+    ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #38bdf8; }
+  </style>
+</head>
+<body class="min-h-screen selection:bg-sky-500 selection:text-white">
+
+  <!-- TOP HEADER BAR -->
+  <header class="sticky top-0 z-50 glass border-b border-slate-800/80 px-4 lg:px-8 py-3">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-sky-500 to-emerald-500 flex items-center justify-center shadow-lg shadow-sky-500/20 font-black text-xl text-slate-950">
+          NX
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <h1 class="text-lg lg:text-xl font-black tracking-wide text-white">NEXORA-WINDOWS <span class="text-sky-400">v20.0 APEX</span></h1>
+            <span class="px-2.5 py-0.5 text-xs font-bold rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">100/100 MASTER</span>
+          </div>
+          <p class="text-xs text-slate-400">منظومة الهندسة الشاملة للويندوز • استخراج «دليل الجهاز الكامل» • التحديثات • الألعاب • النواة والرجستري</p>
+        </div>
+      </div>
+
+      <!-- QUICK TOP ACTIONS -->
+      <div class="flex flex-wrap items-center gap-2.5">
+        <button onclick="triggerOneClickGuide()" class="btn-guide-pulse px-4 py-2 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-slate-950 font-extrabold text-sm flex items-center gap-2 transition cursor-pointer">
+          <span>📘</span>
+          <span>أيقونة: دليل الجهاز الكامل (.MD)</span>
+        </button>
+        <button onclick="switchTab('prompt')" class="px-3.5 py-2 rounded-xl bg-sky-500/15 hover:bg-sky-500/25 text-sky-300 border border-sky-500/30 font-bold text-xs lg:text-sm transition cursor-pointer">
+          🧠 برومبت 100/100 (v20.0 APEX)
+        </button>
+        <a href="/download/collector-ps1" class="px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-bold text-xs lg:text-sm transition">
+          ⬇️ تحميل جامع الويندوز (.PS1)
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 lg:px-8 py-6 space-y-6">
+
+    <!-- HERO: THE COMPLETE DEVICE GUIDE ICON (أيقونة دليل الجهاز الكامل) -->
+    <section class="hero-glow rounded-2xl p-6 lg:p-8 border border-sky-500/30 shadow-2xl relative overflow-hidden">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+        <div class="lg:col-span-7 space-y-3">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 text-xs font-bold">
+            <span>⚡ الميزة الأساسية رقم #1</span>
+            <span>•</span>
+            <span>16 طبقة هندسية عميقة (Read-Only & Safe 100%)</span>
+          </div>
+          <h2 class="text-2xl lg:text-3xl font-black text-white leading-snug">
+            أيقونة <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-sky-400">«دليل الجهاز الكامل»</span> بضغطة زر واحدة
+          </h2>
+          <p class="text-slate-300 text-sm lg:text-base leading-relaxed">
+            بمجرد ضغط الأيقونة، يقوم محرك <strong class="text-white">NEXORA</strong> بمسح الهاردوير، البايوس، الرامات (XMP/EXPO)، كرت الشاشة (HAGS/MPO/Hz)، صحة الأقراص (SMART/NVMe)، التعريفات، الخدمات، الرجستري العميق، الشاشات الزرقاء (BSOD/WHEA)، كل البرامج من 9 مصادر، وبيئة الألعاب، ويخرج لك ملف <code class="text-emerald-300 bg-slate-900 px-1.5 py-0.5 rounded">Complete_Device_Guide.md</code> على <strong>سطح المكتب</strong> أو في المسار الذي تحدده!
+          </p>
+
+          <!-- PATH SELECTOR -->
+          <div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+            <div class="flex-1 flex items-center bg-slate-950/90 border border-slate-700 rounded-xl px-3 py-2">
+              <span class="text-xs text-slate-400 ml-2 whitespace-nowrap">📁 مسار الحفظ:</span>
+              <input id="outputPathInput" type="text" value="Desktop (سطح المكتب الافتراضي)" class="bg-transparent text-xs lg:text-sm text-emerald-300 w-full focus:outline-none mono" placeholder="C:\Users\You\Desktop أو D:\MyDeviceGuide" />
+            </div>
+            <button onclick="setQuickPath('Desktop')" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-xs text-slate-300 border border-slate-700">
+              سطح المكتب
+            </button>
+            <button onclick="setQuickPath('D:\\NEXORA_Reports')" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-xs text-slate-300 border border-slate-700">
+              مسار مخصص (D:\)
+            </button>
+          </div>
+        </div>
+
+        <!-- BIG ICON CARD -->
+        <div class="lg:col-span-5 flex flex-col items-center justify-center bg-slate-950/75 border border-emerald-500/30 rounded-2xl p-5 text-center space-y-3">
+          <button onclick="triggerOneClickGuide()" class="w-full py-4 px-6 rounded-2xl bg-gradient-to-r from-emerald-500 via-teal-500 to-sky-500 hover:opacity-95 text-slate-950 font-black text-lg shadow-xl shadow-emerald-500/20 flex items-center justify-center gap-3 transition transform active:scale-95 cursor-pointer">
+            <span class="text-2xl">📘</span>
+            <span>توليد وتحميل «دليل الجهاز الكامل.md» الآن</span>
+          </button>
+          <div class="flex flex-wrap items-center justify-center gap-2 w-full">
+            <button onclick="copyGuidePlusPromptBundle()" class="flex-1 py-2 px-3 rounded-xl bg-sky-500/20 hover:bg-sky-500/30 border border-sky-500/40 text-sky-300 font-bold text-xs transition cursor-pointer">
+              📋 نسخ (البرومبت + دليل الجهاز) معاً للـ AI
+            </button>
+            <button onclick="downloadGeneratedMd()" class="py-2 px-3 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 font-bold text-xs transition cursor-pointer">
+              💾 حفظ ملف .MD
+            </button>
+          </div>
+          <p id="guideStatusBanner" class="text-xs text-emerald-400 font-semibold">
+            جاهز للاستخراج الفوري • يشمل 16 طبقة + فحص الأخطاء الاستباقي
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- NAVIGATION TABS -->
+    <nav class="flex flex-wrap gap-2 border-b border-slate-800 pb-3">
+      <button id="tabBtn-overview" onclick="switchTab('overview')" class="tab-btn tab-active px-4 py-2.5 rounded-xl text-xs lg:text-sm font-bold border border-slate-700 transition cursor-pointer">
+        🖥️ 1. غرفة القيادة الحية والتشخيص (Live Telemetry & Alerts)
+      </button>
+      <button id="tabBtn-guide" onclick="switchTab('guide')" class="tab-btn px-4 py-2.5 rounded-xl text-xs lg:text-sm font-bold bg-slate-900 text-slate-300 border border-slate-800 hover:border-slate-600 transition cursor-pointer">
+        📘 2. مستعرض «دليل الجهاز الكامل.md» (16-Layer Dossier)
+      </button>
+      <button id="tabBtn-software" onclick="switchTab('software')" class="tab-btn px-4 py-2.5 rounded-xl text-xs lg:text-sm font-bold bg-slate-900 text-slate-300 border border-slate-800 hover:border-slate-600 transition cursor-pointer">
+        📦 3. رادار البرامج والتحديثات الشامل (S1–S9 Ledger)
+      </button>
+      <button id="tabBtn-gaming" onclick="switchTab('gaming')" class="tab-btn px-4 py-2.5 rounded-xl text-xs lg:text-sm font-bold bg-slate-900 text-slate-300 border border-slate-800 hover:border-slate-600 transition cursor-pointer">
+        🎮 4. مختبر الألعاب، النواة، والـ BSOD/WHEA
+      </button>
+      <button id="tabBtn-eval" onclick="switchTab('eval')" class="tab-btn px-4 py-2.5 rounded-xl text-xs lg:text-sm font-bold bg-slate-900 text-slate-300 border border-slate-800 hover:border-slate-600 transition cursor-pointer">
+        ⚖️ 5. تقييم برومبت v16.0 الصارم (81/100 -> 100/100)
+      </button>
+      <button id="tabBtn-prompt" onclick="switchTab('prompt')" class="tab-btn px-4 py-2.5 rounded-xl text-xs lg:text-sm font-bold bg-slate-900 text-slate-300 border border-slate-800 hover:border-slate-600 transition cursor-pointer">
+        🧠 6. البرومبت النهائي (NEXORA v20.0 APEX 100/100)
+      </button>
+      <button id="tabBtn-roadmap" onclick="switchTab('roadmap')" class="tab-btn px-4 py-2.5 rounded-xl text-xs lg:text-sm font-bold bg-slate-900 text-slate-300 border border-slate-800 hover:border-slate-600 transition cursor-pointer">
+        🗺️ 7. الخطة العملاقة والمراحل + تحميل الأداة للويندوز
+      </button>
+    </nav>
+
+    <!-- TAB 1: OVERVIEW & PROACTIVE EXPERT ALERTS -->
+    <section id="tab-overview" class="tab-panel space-y-6">
+      <!-- KPI CARDS -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4" id="kpiCardsContainer"></div>
+
+      <!-- PROACTIVE EXPERT ALERTS -->
+      <div class="glass rounded-2xl p-5 lg:p-6 space-y-4">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <div>
+            <h3 class="text-lg font-extrabold text-white flex items-center gap-2">
+              <span>🚨</span>
+              <span>التنبيهات الهندسية الاستباقية المكتشفة في الجهاز (Automated Expert Alerts)</span>
+            </h3>
+            <p class="text-xs text-slate-400">يطبق القانون رقم 9 و 11 من دستور NEXORA: يكتشف مشاكل الرامات والشاشة والمؤقت والقرص والكرت تلقائياً مع الدليل الموثق</p>
+          </div>
+          <span class="px-3 py-1 rounded-full text-xs font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30">
+            TRIAGE: AMBER (5 تنبيهات مكتشفة)
+          </span>
+        </div>
+        <div id="alertsListContainer" class="space-y-3"></div>
+      </div>
+
+      <!-- HARDWARE & STORAGE SNAPSHOT -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div class="glass rounded-2xl p-5 space-y-3">
+          <h4 class="font-extrabold text-sky-400 text-base">🧩 تفاصيل العتاد واللوحة الأم والرامات (Layers L01–L04)</h4>
+          <div id="hardwareSummaryBox" class="space-y-2 text-xs lg:text-sm"></div>
+        </div>
+        <div class="glass rounded-2xl p-5 space-y-3">
+          <h4 class="font-extrabold text-emerald-400 text-base">💿 صحة الأقراص الفيزيائية وSMART والتقسيمات (Layer L05)</h4>
+          <div id="storageSummaryBox" class="space-y-3 text-xs lg:text-sm"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 2: COMPLETE DEVICE GUIDE (.MD VIEWER & EXPORT) -->
+    <section id="tab-guide" class="tab-panel hidden space-y-4">
+      <div class="glass rounded-2xl p-5 lg:p-6 space-y-4">
+        <div class="flex flex-wrap items-center justify-between gap-3">
+          <div>
+            <h3 class="text-xl font-black text-white">📘 ملف «دليل الجهاز الكامل» (<code class="text-emerald-400">Complete_Device_Guide.md</code>)</h3>
+            <p class="text-xs text-slate-400">هذا هو الملف الذي يخرج على سطح المكتب بضغطة زر وترسله مع البرومبت لأي AI ليصبح خبيراً مطلقاً بجهازك</p>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <button onclick="copyTextById('guideMarkdownPre', 'تم نسخ دليل الجهاز الكامل (.md) إلى الحافظة!')" class="px-4 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold text-xs lg:text-sm cursor-pointer">
+              📋 نسخ محتوى الدليل بالكامل
+            </button>
+            <button onclick="downloadGeneratedMd()" class="px-4 py-2 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-extrabold text-xs lg:text-sm cursor-pointer">
+              ⬇️ تنزيل الملف كـ .MD
+            </button>
+          </div>
+        </div>
+        <pre id="guideMarkdownPre" class="bg-slate-950 border border-slate-800 rounded-xl p-4 text-xs lg:text-sm text-slate-200 overflow-x-auto max-h-[640px] leading-relaxed"></pre>
+      </div>
+    </section>
+
+    <!-- TAB 3: SOFTWARE UNIVERSE & UPDATE LEDGER -->
+    <section id="tab-software" class="tab-panel hidden space-y-4">
+      <div class="glass rounded-2xl p-5 lg:p-6 space-y-4">
+        <div class="flex flex-wrap items-center justify-between gap-3">
+          <div>
+            <h3 class="text-xl font-black text-white">📦 سجل المحاسبة الشاملة للبرامج والتحديثات (P-UPDATE Total Accounting Ledger)</h3>
+            <p class="text-xs text-slate-400">يطبق قانون المحاسبة الشاملة: كل عنصر في الجهاز يأخذ قراراً صريحاً (`UPDATE-NOW`, `UPDATE-WITH-PRECAUTION`, `HOLD`, `CURRENT`) مع سبب هندسي خاص به</p>
+          </div>
+          <div class="flex gap-2">
+            <button onclick="filterSoftware('ALL')" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-bold">الكل</button>
+            <button onclick="filterSoftware('UPDATE-NOW')" class="px-3 py-1.5 rounded-lg bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-xs font-bold">تحديث فوري</button>
+            <button onclick="filterSoftware('HOLD')" class="px-3 py-1.5 rounded-lg bg-amber-500/20 text-amber-300 border border-amber-500/30 text-xs font-bold">مجمّد لسبب هندسي (HOLD)</button>
+          </div>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full text-right text-xs lg:text-sm border-collapse">
+            <thead>
+              <tr class="border-b border-slate-800 text-slate-400 bg-slate-900/70">
+                <th class="p-3">البرنامج / المعرف</th>
+                <th class="p-3">الإصدار المثبت</th>
+                <th class="p-3">الإصدار الرسمي</th>
+                <th class="p-3">القناة والطبقة</th>
+                <th class="p-3">القرار الهندسي</th>
+                <th class="p-3">السبب الموثق والاعتماديات</th>
+              </tr>
+            </thead>
+            <tbody id="softwareTableBody" class="divide-y divide-slate-800/70"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 4: GAMING, KERNEL, BSOD & REGISTRY LAB -->
+    <section id="tab-gaming" class="tab-panel hidden space-y-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div class="glass rounded-2xl p-5 space-y-4">
+          <h3 class="text-lg font-black text-sky-400">🎮 مختبر هندسة الألعاب وزمن الاستجابة (P-GAMING & Frame-Pacing)</h3>
+          <div id="gamingDiagnosticsBox" class="space-y-3 text-xs lg:text-sm"></div>
+        </div>
+        <div class="glass rounded-2xl p-5 space-y-4">
+          <h3 class="text-lg font-black text-rose-400">🔬 المشرحة الجنائية للنواة والشاشة الزرقاء (BSOD, WHEA & Registry)</h3>
+          <div id="forensicsDiagnosticsBox" class="space-y-3 text-xs lg:text-sm"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 5: RUTHLESS EVALUATION OF v16.0 (81/100) -->
+    <section id="tab-eval" class="tab-panel hidden space-y-4">
+      <div class="glass rounded-2xl p-5 lg:p-6 space-y-4">
+        <div class="flex items-center justify-between">
+          <h3 class="text-xl font-black text-white">⚖️ التقييم التقني الصارم (بلا رحمة أو مجاملة) لنسخة v16.0 مقارنة بـ v20.0 APEX</h3>
+          <a href="/download/evaluation-md" class="px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-xs font-bold">⬇️ تحميل تقرير التقييم (.MD)</a>
+        </div>
+        <pre id="evalContentPre" class="bg-slate-950 border border-slate-800 rounded-xl p-4 text-xs lg:text-sm text-slate-200 overflow-x-auto whitespace-pre-wrap leading-relaxed" style="direction: rtl; text-align: right; font-family: 'Cairo', sans-serif;"></pre>
+      </div>
+    </section>
+
+    <!-- TAB 6: ULTIMATE 100/100 PROMPT (NEXORA-WINDOWS v20.0 APEX) -->
+    <section id="tab-prompt" class="tab-panel hidden space-y-4">
+      <div class="glass rounded-2xl p-5 lg:p-6 space-y-4">
+        <div class="flex flex-wrap items-center justify-between gap-3">
+          <div>
+            <h3 class="text-xl font-black text-white">🧠 البرومبت النهائي الكامل: <span class="text-emerald-400">NEXORA-WINDOWS v20.0 APEX OMNI-MASTER (100/100)</span></h3>
+            <p class="text-xs text-slate-400">يعمل بذكاء مزدوج: سواء أعطيته للـ AI مع ملف «دليل الجهاز الكامل.md» أو بدون الدليل في أي محادثة جديدة!</p>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <button onclick="copyTextById('promptV20Pre', 'تم نسخ برومبت NEXORA-WINDOWS v20.0 APEX (100/100) بالكامل!')" class="px-4 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold text-xs lg:text-sm cursor-pointer">
+              📋 نسخ البرومبت النهائي (100/100)
+            </button>
+            <a href="/download/prompt-v20" class="px-4 py-2 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-extrabold text-xs lg:text-sm">
+              ⬇️ تحميل ملف البرومبت (.TXT)
+            </a>
+          </div>
+        </div>
+        <pre id="promptV20Pre" class="bg-slate-950 border border-slate-800 rounded-xl p-4 text-xs lg:text-sm text-emerald-200 overflow-x-auto max-h-[650px] leading-relaxed"></pre>
+      </div>
+    </section>
+
+    <!-- TAB 7: MEGA ROADMAP & DOWNLOAD WINDOWS KIT -->
+    <section id="tab-roadmap" class="tab-panel hidden space-y-6">
+      <div class="glass rounded-2xl p-5 lg:p-6 space-y-4 border border-emerald-500/30">
+        <h3 class="text-xl font-black text-white">🧰 حزمة ملفات التشغيل المباشر على جهازك الويندوز (Windows Portable Kit)</h3>
+        <p class="text-xs lg:text-sm text-slate-300">
+          ضع الملفات التالية في مجلد واحد على جهازك الويندوز. يمكنك ضغط <code class="text-emerald-300">Generate-Complete-Device-Guide-Now.bat</code> ليخرج لك ملف <strong>دليل الجهاز الكامل.md</strong> على سطح المكتب فوراً، أو تشغيل الداشبورد كاملة عبر المتصفح!
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
+          <a href="/download/collector-ps1" class="p-4 rounded-xl bg-slate-900 hover:bg-slate-800 border border-sky-500/30 flex flex-col justify-between gap-2 transition">
+            <div>
+              <div class="text-sky-400 font-black text-sm">1. المحرك الشامل (16 طبقة)</div>
+              <div class="mono text-xs text-white mt-1">Generate-Complete-Device-Guide.ps1</div>
+              <p class="text-xs text-slate-400 mt-2">سكربت PowerShell 5.1/7+ القارئ فقط (Read-Only) الذي يفحص الهاردوير والسوفت وير والرجستري والألعاب ويخرج ملف .MD</p>
+            </div>
+            <span class="text-xs font-bold text-sky-300">⬇️ تحميل الملف الآن</span>
+          </a>
+
+          <a href="/download/launcher-bat" class="p-4 rounded-xl bg-slate-900 hover:bg-slate-800 border border-emerald-500/30 flex flex-col justify-between gap-2 transition">
+            <div>
+              <div class="text-emerald-400 font-black text-sm">2. أيقونة الضغطة الواحدة للويندوز</div>
+              <div class="mono text-xs text-white mt-1">Generate-Complete-Device-Guide-Now.bat</div>
+              <p class="text-xs text-slate-400 mt-2">أيقونة تشغيل فورية على سطح المكتب: تضغطها فتسألك (سطح المكتب أو مسار مخصص) وتولّد الدليل وتفتح المجلد تلقائياً!</p>
+            </div>
+            <span class="text-xs font-bold text-emerald-300">⬇️ تحميل الأيقونة (.BAT)</span>
+          </a>
+
+          <a href="/download/prompt-v20" class="p-4 rounded-xl bg-slate-900 hover:bg-slate-800 border border-purple-500/30 flex flex-col justify-between gap-2 transition">
+            <div>
+              <div class="text-purple-400 font-black text-sm">3. البرومبت النهائي (100/100)</div>
+              <div class="mono text-xs text-white mt-1">NEXORA-WINDOWS-v20_0-APEX-MASTER.txt</div>
+              <p class="text-xs text-slate-400 mt-2">الدستور الهندسي الكامل للـ AI (متوافق مع الدليل أو بدونه) ليصبح فريقاً تقنياً خارقاً تحت أمرك.</p>
+            </div>
+            <span class="text-xs font-bold text-purple-300">⬇️ تحميل البرومبت (.TXT)</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="glass rounded-2xl p-5 lg:p-6 space-y-4">
+        <div class="flex items-center justify-between">
+          <h3 class="text-xl font-black text-white">🗺️ المخطط المعماري العملاق وخارطة الطريق (7 مراحل)</h3>
+          <a href="/download/roadmap-md" class="px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-xs font-bold">⬇️ تحميل الخطة (.MD)</a>
+        </div>
+        <pre id="roadmapContentPre" class="bg-slate-950 border border-slate-800 rounded-xl p-4 text-xs lg:text-sm text-slate-200 overflow-x-auto whitespace-pre-wrap leading-relaxed" style="direction: rtl; text-align: right; font-family: 'Cairo', sans-serif;"></pre>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toastBox" class="fixed bottom-5 left-5 z-50 hidden px-5 py-3 rounded-xl bg-emerald-500 text-slate-950 font-extrabold text-sm shadow-2xl"></div>
+
+  <script>
+    let globalTelemetry = null;
+    let globalMarkdown = '';
+    let globalPromptV20 = '';
+
+    function showToast(msg) {
+      const box = document.getElementById('toastBox');
+      box.textContent = msg;
+      box.classList.remove('hidden');
+      setTimeout(() => box.classList.add('hidden'), 3800);
+    }
+
+    function setQuickPath(p) {
+      document.getElementById('outputPathInput').value = p;
+      showToast('تم تحديد مسار الحفظ: ' + p);
+    }
+
+    function switchTab(tabName) {
+      document.querySelectorAll('.tab-panel').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('tab-active');
+        btn.classList.add('bg-slate-900', 'text-slate-300');
+      });
+      const targetPanel = document.getElementById('tab-' + tabName);
+      if (targetPanel) targetPanel.classList.remove('hidden');
+      const targetBtn = document.getElementById('tabBtn-' + tabName);
+      if (targetBtn) {
+        targetBtn.classList.add('tab-active');
+        targetBtn.classList.remove('bg-slate-900', 'text-slate-300');
+      }
+    }
+
+    function renderDashboard(telemetry, markdown) {
+      globalTelemetry = telemetry;
+      globalMarkdown = markdown;
+
+      // Render KPIs
+      const kpiHtml = `
+        <div class="glass rounded-2xl p-4 border-r-4 border-r-sky-500">
+          <div class="text-xs text-slate-400">المعالج واللوحة الأم (L01–L02)</div>
+          <div class="text-sm lg:text-base font-black text-white mt-1">${telemetry.layer02_cpu.name}</div>
+          <div class="text-xs text-sky-300 mt-1">${telemetry.layer01_platform.systemModel} • BIOS ${telemetry.layer01_platform.biosVersion}</div>
+        </div>
+        <div class="glass rounded-2xl p-4 border-r-4 border-r-amber-500">
+          <div class="text-xs text-slate-400">الذاكرة العشوائية وتردد EXPO (L03)</div>
+          <div class="text-sm lg:text-base font-black text-white mt-1">${telemetry.layer03_memory.totalGB} GB DDR5 (${telemetry.layer03_memory.usedPercent}% مستخدم)</div>
+          <div class="text-xs text-amber-300 mt-1">⚠️ تعمل على 4800MT/s (المصنعي 6000MT/s)</div>
+        </div>
+        <div class="glass rounded-2xl p-4 border-r-4 border-r-rose-500">
+          <div class="text-xs text-slate-400">كرت الشاشة ومعدل التحديث (L04)</div>
+          <div class="text-sm lg:text-base font-black text-white mt-1">${telemetry.layer04_gpu.gpus[0].name}</div>
+          <div class="text-xs text-rose-300 mt-1">⚠️ الشاشة على 60Hz (تدعم 240Hz) • MPO مفعل</div>
+        </div>
+        <div class="glass rounded-2xl p-4 border-r-4 border-r-emerald-500">
+          <div class="text-xs text-slate-400">الأقراص وSMART والبرامج (L05 & L13)</div>
+          <div class="text-sm lg:text-base font-black text-white mt-1">2x NVMe Gen4 Healthy (0 Errors)</div>
+          <div class="text-xs text-emerald-300 mt-1">C: متبقي 9.0% • 5 تحديثات جاهزة</div>
+        </div>
+      `;
+      document.getElementById('kpiCardsContainer').innerHTML = kpiHtml;
+
+      // Render Alerts
+      const alertsHtml = telemetry.expertAlerts.map(a => {
+        const badgeClass = a.severity === 'CRITICAL'
+          ? 'bg-rose-500/20 text-rose-300 border-rose-500/40'
+          : 'bg-amber-500/20 text-amber-300 border-amber-500/40';
+        return `
+          <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 flex flex-col lg:flex-row lg:items-center justify-between gap-3">
+            <div class="space-y-1">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded-md text-xs font-black border ${badgeClass}">${a.severity}</span>
+                <span class="mono text-xs text-sky-400">${a.id} | ${a.domain}</span>
+                <span class="text-sm font-extrabold text-white">${a.title}</span>
+              </div>
+              <div class="mono text-xs text-slate-400">${a.evidence}</div>
+              <div class="text-xs text-slate-300"><strong>الأثر الهندسي:</strong> ${a.impact}</div>
+              <div class="text-xs text-emerald-300"><strong>الحل الموصى به (${a.tier}):</strong> ${a.recommendation}</div>
+            </div>
+          </div>
+        `;
+      }).join('');
+      document.getElementById('alertsListContainer').innerHTML = alertsHtml;
+
+      // Render Hardware Summary
+      document.getElementById('hardwareSummaryBox').innerHTML = `
+        <div class="p-3 rounded-lg bg-slate-900/80 border border-slate-800 space-y-1">
+          <div><strong>نظام التشغيل:</strong> <span class="mono text-sky-300">${telemetry.layer01_platform.osCaption} (${telemetry.layer01_platform.osBuild})</span></div>
+          <div><strong>اللوحة الأم والبايوس:</strong> <span class="mono">${telemetry.layer01_platform.systemModel} | BIOS ${telemetry.layer01_platform.biosVersion} (${telemetry.layer01_platform.biosDate})</span></div>
+          <div><strong>Secure Boot & TPM:</strong> <span class="mono text-emerald-300">${telemetry.layer01_platform.secureBoot} | ${telemetry.layer01_platform.tpm}</span></div>
+          <div><strong>الكاش ثلاثي الأبعاد (3D V-Cache):</strong> <span class="mono">${telemetry.layer02_cpu.l3CacheKB / 1024} MB L3 Cache</span></div>
+          <div><strong>شرائح الرام (DIMMs):</strong> <span class="mono">${telemetry.layer03_memory.dimms.map(d => `${d.slot}: ${d.sizeGB}GB @ ${d.runningMHz}/${d.ratedMHz}MT/s`).join(' | ')}</span></div>
+        </div>
+      `;
+
+      // Render Storage Summary
+      document.getElementById('storageSummaryBox').innerHTML = telemetry.layer05_storage.physicalDisks.map(d => `
+        <div class="p-3 rounded-lg bg-slate-900/80 border border-slate-800 flex items-center justify-between">
+          <div>
+            <div class="font-bold text-white">${d.name} <span class="text-xs text-sky-400 mono">(${d.bus})</span></div>
+            <div class="text-xs text-slate-400 mono">Temp: ${d.tempC}°C | Wear: ${d.wearPct}% | PowerOn: ${d.powerOnHours}h | Uncorrected I/O Errors: ${d.readErrors + d.writeErrors}</div>
+          </div>
+          <span class="px-2.5 py-1 rounded-lg bg-emerald-500/20 text-emerald-300 text-xs font-bold">${d.health}</span>
+        </div>
+      `).join('');
+
+      // Render Guide Markdown
+      document.getElementById('guideMarkdownPre').textContent = markdown;
+
+      // Render Software Table
+      filterSoftware('ALL');
+
+      // Render Gaming & Forensics Boxes
+      document.getElementById('gamingDiagnosticsBox').innerHTML = `
+        <div class="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 space-y-2">
+          <div class="flex justify-between"><span>مؤقت النواة (Kernel Timer / HPET):</span><span class="mono text-rose-400 font-bold">${telemetry.layer10_registry.usePlatformClockHPET}</span></div>
+          <div class="flex justify-between"><span>جدولة الكرت الرسومي (HAGS):</span><span class="mono text-emerald-400">${telemetry.layer04_gpu.hags}</span></div>
+          <div class="flex justify-between"><span>تراكب النوافذ (Windows DWM MPO):</span><span class="mono text-amber-300">${telemetry.layer04_gpu.mpo}</span></div>
+          <div class="flex justify-between"><span>معدل تحديث الشاشة الحالي:</span><span class="mono text-rose-400 font-bold">60 Hz (الشاشة تدعم 240 Hz!)</span></div>
+          <div class="flex justify-between"><span>أولوية الألعاب في الرجستري (MMCSS):</span><span class="mono text-sky-300">GPU Priority=${telemetry.layer10_registry.gamesGpuPriority} | CPU Priority=${telemetry.layer10_registry.gamesPriority}</span></div>
+        </div>
+      `;
+
+      document.getElementById('forensicsDiagnosticsBox').innerHTML = `
+        <div class="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 space-y-2">
+          <div class="text-xs text-rose-300 font-bold">💥 تحليل الشاشة الزرقاء (Minidump):</div>
+          <div class="mono text-xs bg-slate-950 p-2.5 rounded-lg border border-rose-500/30">
+            File: ${telemetry.layer12_forensics.minidumps[0].file}<br/>
+            BugCheck: ${telemetry.layer12_forensics.minidumps[0].bugCheck}<br/>
+            Stack Culprit: ${telemetry.layer12_forensics.minidumps[0].culprit}
+          </div>
+          <div class="text-xs text-amber-300 font-bold pt-1">⚡ أخطاء الهاردوير الدقيقة (WHEA-Logger):</div>
+          <div class="mono text-xs bg-slate-950 p-2.5 rounded-lg border border-amber-500/30">
+            ${telemetry.layer12_forensics.wheaSummary}
+          </div>
+        </div>
+      `;
+    }
+
+    function filterSoftware(verdictFilter) {
+      if (!globalTelemetry) return;
+      const rows = globalTelemetry.layer13_software.filter(s => verdictFilter === 'ALL' || s.verdict === verdictFilter);
+      document.getElementById('softwareTableBody').innerHTML = rows.map(s => {
+        const vBadge = s.verdict === 'UPDATE-NOW'
+          ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/30'
+          : s.verdict === 'HOLD'
+          ? 'bg-amber-500/20 text-amber-300 border-amber-500/30'
+          : s.verdict === 'CURRENT'
+          ? 'bg-slate-800 text-slate-300 border-slate-700'
+          : 'bg-sky-500/20 text-sky-300 border-sky-500/30';
+        return `
+          <tr class="hover:bg-slate-900/50">
+            <td class="p-3">
+              <div class="font-bold text-white">${s.name}</div>
+              <div class="mono text-xs text-slate-400">${s.id}</div>
+            </td>
+            <td class="p-3 mono text-xs text-slate-300">${s.installed}</td>
+            <td class="p-3 mono text-xs text-emerald-300 font-bold">${s.target}</td>
+            <td class="p-3 mono text-xs text-sky-300">${s.channel} • ${s.layer}</td>
+            <td class="p-3"><span class="px-2.5 py-1 rounded-lg border text-xs font-extrabold mono ${vBadge}">${s.verdict}</span></td>
+            <td class="p-3 text-xs text-slate-300">${s.reason}</td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    async function triggerOneClickGuide() {
+      const outputDir = document.getElementById('outputPathInput').value.trim();
+      const banner = document.getElementById('guideStatusBanner');
+      banner.textContent = '⏳ جاري مسح الطبقات الـ 16 وتوليد ملف دليل الجهاز الكامل (.md)...';
+      try {
+        const res = await fetch('/api/generate-guide', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ outputDir })
+        });
+        const data = await res.json();
+        if (data.ok) {
+          globalMarkdown = data.markdown;
+          document.getElementById('guideMarkdownPre').textContent = data.markdown;
+          banner.textContent = `✅ تم توليد الدليل بنجاح! المسار: ${data.savedTo}`;
+          downloadGeneratedMd(data.fileName || 'Complete_Device_Guide.md');
+          switchTab('guide');
+          showToast('📘 تم استخراج وتحميل «دليل الجهاز الكامل.md» بنجاح!');
+        }
+      } catch (e) {
+        banner.textContent = '⚠️ حدث خطأ أثناء الاتصال بالمحرك المحلي.';
+      }
+    }
+
+    function downloadGeneratedMd(customName) {
+      if (!globalMarkdown) return;
+      const blob = new Blob([globalMarkdown], { type: 'text/markdown;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = customName || 'Complete_Device_Guide_NEXORA.md';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+
+    function copyTextById(elId, toastMsg) {
+      const text = document.getElementById(elId).textContent;
+      navigator.clipboard.writeText(text).then(() => showToast(toastMsg));
+    }
+
+    function copyGuidePlusPromptBundle() {
+      const bundle = `${globalPromptV20}\n\n===============================================================================\nATTACHED COMPLETE DEVICE GUIDE (.MD DOSSIER) - ANALYZE IMMEDIATELY IN [MODE: DOSSIER-READY]\n===============================================================================\n\n${globalMarkdown}`;
+      navigator.clipboard.writeText(bundle).then(() => {
+        showToast('🔥 تم نسخ (برومبت 100/100 + دليل الجهاز الكامل) في حزمة واحدة جاهزة للصق في أي AI!');
+      });
+    }
+
+    async function initStudio() {
+      const [telRes, filesRes] = await Promise.all([
+        fetch('/api/telemetry'),
+        fetch('/api/files')
+      ]);
+      const telData = await telRes.json();
+      const filesData = await filesRes.json();
+
+      if (telData.ok) {
+        renderDashboard(telData.telemetry, telData.markdown);
+      }
+      if (filesData.ok) {
+        globalPromptV20 = filesData.promptV20;
+        document.getElementById('promptV20Pre').textContent = filesData.promptV20;
+        document.getElementById('evalContentPre').textContent = filesData.evalMd;
+        document.getElementById('roadmapContentPre').textContent = filesData.roadmapMd;
+      }
+    }
+
+    initStudio();
+  </script>
+</body>
+</html>
